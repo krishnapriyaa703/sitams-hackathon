@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishHappy Learn - Notepad</title>
+    <link rel="stylesheet" href="notepad.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>KrishHappy Learn</h1>
+        <p>My Smart Study Notepad</p>
+    </header>
+
+    <main class="notepad">
+        <input type="text" id="title" placeholder="Enter note title">
+
+        <textarea id="notes" placeholder="Write your study notes here..."></textarea>
+
+        <p id="status">Your notes are ready.</p>
+
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="clearNote()">New Note</button>
+        <button onclick="downloadNote()">Download Note</button>
+    </main>
+
+    <script src="notepad.js"></script>
+</body>
+
+</html>

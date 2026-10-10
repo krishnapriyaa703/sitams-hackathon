@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard — KrishHappy Learn</title>
+  <meta name="description" content="Personalized student cockpit with daily goals, study streaks, active tasks, and course progress.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/voice.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">KH</div>
+          <div class="brand-text">
+            <span class="brand-title">KrishHappy</span>
+            <span class="brand-tagline-sub">Learn • Focus • Grow</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-category">Main Menu</div>
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="dashboard.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="ai-tutor.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+          <span>AI Tutor</span>
+          <span class="nav-badge">AI 2.0</span>
+        </a>
+
+        <div class="nav-category">Academics & Career</div>
+        <a href="exams.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Competitive Exams</span>
+        </a>
+        <a href="skills.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <span>Career Skills</span>
+        </a>
+
+        <div class="nav-category">Focus & Wellness</div>
+        <a href="focus.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
+          <span>Focus Tracker</span>
+        </a>
+        <a href="wellness.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span>Wellness</span>
+        </a>
+        <a href="planner.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Study Planner</span>
+        </a>
+
+        <div class="nav-category">Analytics & Account</div>
+        <a href="progress.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          <span>Progress</span>
+        </a>
+        <a href="profile.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="streak-card-mini">
+          <div class="streak-icon">🔥</div>
+          <div class="streak-info">
+            <h5><span class="streak-counter">5</span> Day Streak!</h5>
+            <p>Consistency is key to mastery</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <header class="app-header">
+        <div class="header-left">
+          <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div class="header-greeting">
+            <h2 class="greeting-title">Hello, <span id="dashGreetingName">Krishan</span>! 👋</h2>
+            <p class="greeting-sub" id="dashGoalSubtitle">Your daily target is 2h 00m</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+            <span class="theme-icon-state">🌙</span>
+          </button>
+          <a href="profile.html" class="user-profile-pill">
+            <div class="user-avatar">👨‍💻</div>
+            <span class="user-name-text">Krishan Kumar</span>
+          </a>
+        </div>
+      </header>
+
+      <div class="content-wrapper">
+        <!-- Top Metric Stat Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-content">
+              <span class="stat-label">Today's Study Time</span>
+              <span class="stat-value" id="dashStudyTime">75 min</span>
+              <span class="stat-meta">🎯 Goal: <span id="dashGoalLabel">120 min</span></span>
+            </div>
+            <div class="stat-icon-wrap">⏱️</div>
+          </div>
+
+          <div class="stat-card amber">
+            <div class="stat-content">
+              <span class="stat-label">Learning Streak</span>
+              <span class="stat-value" id="dashStreakVal">5 Days</span>
+              <span class="stat-meta" style="color: var(--accent-amber);">🔥 Keep it going!</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-amber);">🔥</div>
+          </div>
+
+          <div class="stat-card cyan">
+            <div class="stat-content">
+              <span class="stat-label">Focus Sessions Done</span>
+              <span class="stat-value" id="dashFocusCount">2 Sessions</span>
+              <span class="stat-meta" style="color: var(--accent-cyan);">⚡ 50m Deep Work</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-cyan);">🧠</div>
+          </div>
+
+          <div class="stat-card emerald">
+            <div class="stat-content">
+              <span class="stat-label">Completed Tasks</span>
+              <span class="stat-value" id="dashTaskCount">2 / 4</span>
+              <span class="stat-meta" style="color: var(--accent-emerald);">✅ 50% Daily Completion</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-emerald);">📋</div>
+          </div>
+        </div>
+
+        <!-- Daily Target Progress Banner -->
+        <div class="card mb-4" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.06), rgba(6, 182, 212, 0.06));">
+          <div class="flex-between mb-1">
+            <div>
+              <h4 style="font-size: 1.05rem;">🎯 Daily Learning Target Progress</h4>
+              <p style="font-size: 0.82rem;">Track every minute spent on lessons, quizzes, and focus sessions</p>
+            </div>
+            <span class="badge badge-primary" id="dashProgressPercentBadge" style="font-size: 0.88rem;">62%</span>
+          </div>
+          <div class="progress-bar-container" style="height: 12px;">
+            <div class="progress-bar-fill" id="dashProgressBar" style="width: 62%;"></div>
+          </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem;" class="planner-grid">
+          <!-- Left Column: Upcoming Tasks & Today Checklist -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">📝 Today's Study Checklist</h3>
+                  <p class="card-subtitle">Mark completed to automatically log study minutes</p>
+                </div>
+                <a href="planner.html" class="btn btn-secondary btn-sm">+ Manage All</a>
+              </div>
+
+              <div id="dashTasksList" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <!-- Dynamically populated via JS -->
+              </div>
+            </div>
+
+            <!-- Course / Skill Progress Overview -->
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">🚀 Skill Mastery Progress</h3>
+                  <p class="card-subtitle">Your real-time competency level in core tech stacks</p>
+                </div>
+                <a href="skills.html" class="btn btn-secondary btn-sm">Explore All →</a>
+              </div>
+
+              <div id="dashSkillsList" style="display: flex; flex-direction: column; gap: 1rem;">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Quick AI Launch, Focus Session, Recommendations -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <!-- AI Tutor Quick Prompt Card -->
+            <div class="card" style="border-left: 4px solid var(--primary);">
+              <div class="card-header" style="margin-bottom: 0.75rem;">
+                <h3 class="card-title">🤖 Ask AI Tutor</h3>
+                <span class="badge badge-purple">Instant</span>
+              </div>
+              <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+                Stuck on a tricky concept or want a revision summary?
+              </p>
+              <div class="chat-input-area" style="padding: 0; border: none; background: transparent;">
+                <input type="text" id="dashQuickAiInput" class="form-control" placeholder="Ask e.g. Explain Binary Search Tree...">
+                <button id="dashQuickAiBtn" class="btn btn-primary btn-sm">Ask</button>
+              </div>
+            </div>
+
+            <!-- Quick Focus Launcher -->
+            <div class="card" style="border-left: 4px solid var(--accent-cyan);">
+              <div class="card-header" style="margin-bottom: 0.75rem;">
+                <h3 class="card-title">⏱️ Quick Deep Focus</h3>
+                <span class="badge badge-info">25 Mins</span>
+              </div>
+              <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+                Start a distraction-free Pomodoro session with soothing background audio.
+              </p>
+              <a href="focus.html" class="btn btn-accent w-100">
+                <span>▶ Start Focus Session</span>
+              </a>
+            </div>
+
+            <!-- Recommended Next Action -->
+            <div class="card">
+              <div class="card-header" style="margin-bottom: 0.75rem;">
+                <h3 class="card-title">💡 Recommended Next Step</h3>
+              </div>
+              <div style="background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem;">
+                  <span style="font-size: 1.2rem;">🏛️</span>
+                  <strong style="font-size: 0.9rem;" id="dashRecTitle">GATE Mock Test: Algorithms</strong>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.85rem;" id="dashRecDesc">
+                  You scored 80% on last quiz. Complete 10 more questions to master Dynamic Programming.
+                </p>
+                <a href="exams.html" class="btn btn-primary btn-sm w-100">Take Practice Quiz →</a>
+              </div>
+            </div>
+
+            <!-- Quick Wellness Check-in -->
+            <div class="card">
+              <div class="card-header" style="margin-bottom: 0.5rem;">
+                <h3 class="card-title">🌿 Mind & Body Check</h3>
+              </div>
+              <div class="flex-between">
+                <div>
+                  <div style="font-size: 0.85rem; font-weight: 600;">Hydration: <span id="dashWaterText">5/8 Glasses</span></div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Drink water to stay alert</div>
+                </div>
+                <button id="dashAddWaterBtn" class="btn btn-secondary btn-sm">💧 +1 Glass</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Footer -->
+      <footer class="app-footer">
+        <div class="footer-inner">
+          <div class="footer-bottom">
+            <p>© 2026 KrishHappy Learn — "Learn Smarter. Focus Better. Grow Happier."</p>
+            <p>Student Performance Cockpit</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/voice-assistant.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Analytics & Reports — KrishHappy Learn</title>
+  <meta name="description" content="Visual study metrics, weekly study time breakdowns, quiz accuracy scores, and consistency streaks.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">KH</div>
+          <div class="brand-text">
+            <span class="brand-title">KrishHappy</span>
+            <span class="brand-tagline-sub">Learn • Focus • Grow</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-category">Main Menu</div>
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="dashboard.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="ai-tutor.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+          <span>AI Tutor</span>
+          <span class="nav-badge">AI 2.0</span>
+        </a>
+
+        <div class="nav-category">Academics & Career</div>
+        <a href="exams.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Competitive Exams</span>
+        </a>
+        <a href="skills.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <span>Career Skills</span>
+        </a>
+
+        <div class="nav-category">Focus & Wellness</div>
+        <a href="focus.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
+          <span>Focus Tracker</span>
+        </a>
+        <a href="wellness.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span>Wellness</span>
+        </a>
+        <a href="planner.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Study Planner</span>
+        </a>
+
+        <div class="nav-category">Analytics & Account</div>
+        <a href="progress.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          <span>Progress</span>
+        </a>
+        <a href="profile.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="streak-card-mini">
+          <div class="streak-icon">🔥</div>
+          <div class="streak-info">
+            <h5><span class="streak-counter">5</span> Day Streak!</h5>
+            <p>Consistency is key to mastery</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <header class="app-header">
+        <div class="header-left">
+          <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div class="header-greeting">
+            <h2 class="greeting-title">Progress Analytics & Mastery 📈</h2>
+            <p class="greeting-sub">Detailed charts of study hours, quiz scores, focus sessions, and streak heatmap</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <button class="btn btn-secondary btn-sm" id="exportReportBtn">
+            📥 Export Report
+          </button>
+          <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+            <span class="theme-icon-state">🌙</span>
+          </button>
+          <a href="profile.html" class="user-profile-pill">
+            <div class="user-avatar">👨‍💻</div>
+            <span class="user-name-text">Krishan Kumar</span>
+          </a>
+        </div>
+      </header>
+
+      <div class="content-wrapper">
+        <!-- Top Stats Row -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-content">
+              <span class="stat-label">Total Study Time</span>
+              <span class="stat-value" id="progTotalMinutes">325 min</span>
+              <span class="stat-meta">⏱️ ~5.4 Hours logged</span>
+            </div>
+            <div class="stat-icon-wrap">⌛</div>
+          </div>
+
+          <div class="stat-card cyan">
+            <div class="stat-content">
+              <span class="stat-label">Average Quiz Score</span>
+              <span class="stat-value" id="progAvgQuizScore">85.8%</span>
+              <span class="stat-meta" style="color: var(--accent-cyan);">🎯 High accuracy</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-cyan);">🎯</div>
+          </div>
+
+          <div class="stat-card amber">
+            <div class="stat-content">
+              <span class="stat-label">Active Streak</span>
+              <span class="stat-value" id="progStreak">5 Days</span>
+              <span class="stat-meta" style="color: var(--accent-amber);">🔥 Top 5% consistency</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-amber);">🔥</div>
+          </div>
+
+          <div class="stat-card emerald">
+            <div class="stat-content">
+              <span class="stat-label">Total Skills Studied</span>
+              <span class="stat-value" id="progSkillsCount">9 / 10</span>
+              <span class="stat-meta" style="color: var(--accent-emerald);">⚡ Career on track</span>
+            </div>
+            <div class="stat-icon-wrap" style="color: var(--accent-emerald);">🚀</div>
+          </div>
+        </div>
+
+        <!-- Visual Analytics Grid -->
+        <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem;" class="planner-grid mb-4">
+          <!-- 7-Day Study Time Bar Chart -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">📊 7-Day Study Time Trend</h3>
+                <p class="card-subtitle">Daily minutes spent learning and solving problems</p>
+              </div>
+              <span class="badge badge-primary">Weekly View</span>
+            </div>
+
+            <div class="chart-card-body" id="weeklyStudyBarChart">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Quiz Scores by Exam Category -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">🎯 Mock Quiz Accuracy</h3>
+                <p class="card-subtitle">Performance breakdown by exam module</p>
+              </div>
+            </div>
+
+            <div id="quizAccuracyList" style="display: flex; flex-direction: column; gap: 1rem; padding-top: 0.5rem;">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 30-Day Consistency Heatmap Grid -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">🔥 30-Day Study Consistency Calendar</h3>
+              <p class="card-subtitle">Build unstoppable daily learning momentum</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--text-muted);">
+              <span>Less</span>
+              <span style="width: 12px; height: 12px; border-radius: 2px; background: var(--bg-subtle); display: inline-block;"></span>
+              <span style="width: 12px; height: 12px; border-radius: 2px; background: rgba(99, 102, 241, 0.35); display: inline-block;"></span>
+              <span style="width: 12px; height: 12px; border-radius: 2px; background: #4f46e5; display: inline-block;"></span>
+              <span>More</span>
+            </div>
+          </div>
+
+          <div class="heatmap-grid" id="streakHeatmapGrid" style="grid-template-columns: repeat(10, 1fr); max-width: 700px; margin: 1rem auto;">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Recent Quiz History Table -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">📜 Mock Test Log</h3>
+            <a href="exams.html" class="btn btn-outline btn-sm">+ Take New Quiz</a>
+          </div>
+
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border-light); color: var(--text-muted);">
+                  <th style="padding: 0.75rem 1rem;">Exam / Subject</th>
+                  <th style="padding: 0.75rem 1rem;">Topic</th>
+                  <th style="padding: 0.75rem 1rem;">Score</th>
+                  <th style="padding: 0.75rem 1rem;">Accuracy</th>
+                  <th style="padding: 0.75rem 1rem;">Date</th>
+                </tr>
+              </thead>
+              <tbody id="quizHistoryTableBody">
+                <!-- Rendered via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <div class="footer-inner">
+          <div class="footer-bottom">
+            <p>© 2026 KrishHappy Learn — "Learn Smarter. Focus Better. Grow Happier."</p>
+            <p>Progress Analytics & Learning Intelligence</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/progress.js"></script>
+</body>
+</html>
